@@ -3,9 +3,10 @@ import { Silkscreen, Chakra_Petch } from "next/font/google";
 import "./globals.css";
 
 // components
-import Header from "@/components/Header";
-import PageTransition from "@/components/PageTransition";
-import StairTransition from "@/components/StairTransition";
+// import Header from "@/components/Header";
+// import PageTransition from "@/components/PageTransition";
+// import StairTransition from "@/components/StairTransition";
+import Home from "./page.jsx";
 
 const silkscreen = Silkscreen({
   subsets: ["latin"],
@@ -27,10 +28,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={chakra.variable}>
-          <Header />
+        <Home />
+          {/* <Header />
           <StairTransition />
           <PageTransition>{children}</PageTransition>
-          <Analytics />
+          <Analytics /> */}
       </body>
     </html>
   );
