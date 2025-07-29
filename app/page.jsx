@@ -10,15 +10,15 @@ import Contact from "./contact/page";
 export default function Home() {
   return (
     <div>
-      <section id="home" className="container flex-1 items-center mx-auto h-screen font-chakra overflow-hidden md:py-20 md:content-end">
-        <div className="flex flex-col md:flex-row justify-between">
+      <section id="home" className="container">
+        <div className="flex flex-col md:flex-row justify-between gap-5">
           {/* text */}
           <div className="flex flex-col justify-center items-center md:place-items-start text-center md:text-left order-2 md:order-none">
-            <span className="text-xl">Web Developer</span>
-            <h1 className="h1 mb-6">
+            <span className="text-md md:text-xl">Frontend Developer</span>
+            <h1 className="text-[36px] md:text-[65px] xl:text-[78px] leading-[1.1] font-semibold mb-4">
               Hello, I'm <br /> <span className="txtaccent">Dika Arnanda Putra</span>
             </h1>
-            <p className="max-w-[500px] mb-9 text-white/80">I am skilled in a wide variety of programming languages, and excel in interactive and responsive web building experience.
+            <p className="max-w-[500px] mb-5 md:mb-9 text-white/80">I am skilled in a wide variety of programming languages, and excel in interactive and responsive web building experience.
             </p>
             {/* Social media */}
             <div className="mb-8 xl:mb-0">
@@ -26,14 +26,14 @@ export default function Home() {
             </div>
           </div>
           {/* photo */}
-          <div className="order-1 md:order-none mb-8 md:mb-0">
+          <div className="order-1 xl:order-none mb-4 xl:mb-0 mt-20 md:mt-0">
             <Photo />
           </div>
         </div>
       </section>
-      <section id="about" className="h-screen bg-red-200"><AboutMe /></section>
-      <section id="project" className="h-screen bg-green-200"><Project /></section>
-      <section id="contact" className="h-screen bg-yellow-200"><Contact /></section>
+      <section id="about" className="container h-screen bg-red-200"><AboutMe /></section>
+      <section id="project" className="container h-screen bg-green-200"><Project /></section>
+      <section id="contact" className="container h-screen bg-yellow-200"><Contact /></section>
     </div>
 
     // <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">

@@ -123,8 +123,13 @@
   body {
     @apply bg-[#1c1c22] text-white leading-loose;
   }
+  section {
+    @apply flex-1 h-full sm:h-screen items-center mx-auto font-chakra overflow-hidden
+    lg:pt-10 lg:pb-20 md:pt-30 md:pb-15 md:content-end
+  }
+
   .container {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+    @apply max-w-7xl mx-auto px-4 xl:px-8;
   }
   .txtaccent {
     @apply text-[#00ff99]
@@ -132,13 +137,13 @@
   .accentHover {
     @apply hover:text-[#00e187]
   }
-  .h1 {
-    @apply text-[48px] xl:text-[78px] leading-[1.1] font-semibold;
+  /* .h1 {
+    @apply text-[48px] md:text-[67px] xl:text-[78px] leading-[1.1] font-semibold;
   }
   .h2 {
-    @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;
+    @apply text-[36px] md:text-[42px] xl:text-[48px] leading-[1.1] font-semibold;
   }
   .h3 {
-    @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
-  }
+    @apply text-[20px] md:text-[22px] xl:text-[24px] leading-[1.1] font-semibold;
+  } */
 }

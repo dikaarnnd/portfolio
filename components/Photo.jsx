@@ -13,7 +13,7 @@ const Photo = () => {
         opacity: 1,
         transition: { delay: 2, duration: 0.4, ease: "easeIn" },
     }}
-    className="relative w-[298px] h-[298px] xl:w-[400px] xl:h-[400px] overflow-hidden rounded-full"
+    className="relative w-[250px] h-[250px] md:w-[298px] md:h-[298px] lg:w-[352px] lg:h-[352px] xl:w-[400px] xl:h-[400px] overflow-hidden rounded-full"
     >
         <motion.div 
         initial={{ opacity: 0 }}
@@ -28,7 +28,7 @@ const Photo = () => {
 
     {/* circle */}
     <motion.svg
-    className="h-[304px] w-[304px] xl:h-[410px] xl:w-[410px] absolute"
+    className="w-[254px] h-[254px] md:h-[304px] md:w-[304px] lg:w-[358px] lg:h-[358px] xl:h-[410px] xl:w-[410px] absolute"
     fill="transparent"
     viewBox="0 0 506 506"
     xmlns="http://www.w3.org/2000/svg"
