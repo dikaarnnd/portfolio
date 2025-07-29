@@ -1,4 +1,9 @@
 import { Geist, Geist_Mono, Chakra_Petch } from "next/font/google";
+
+import Header from "@/components/Header";
+import PageTransition from "@/components/PageTransition";
+import StairTransition from "@/components/StairTransition";
+
 import "./globals.css";
 
 const geistSans = Geist({
@@ -29,7 +34,13 @@ export default function RootLayout({ children }) {
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         className={`${chakra.variable} antialiased`}
       >
-        {children}
+        {/* <Header /> */}
+        <div className="fixed top-0 left-0 w-full z-40 bg-[#1c1c22] bg-opacity-80 backdrop-blur text-white font-chakra transition-all duration-300 shadow-md">
+          <Header />
+        </div>
+        <StairTransition />
+        <PageTransition>{children}</PageTransition>
+        {/* {children} */}
       </body>
     </html>
   );

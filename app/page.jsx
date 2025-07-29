@@ -2,22 +2,27 @@
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
 
+// pages
+import AboutMe from "./aboutme/page";
+import Project from "./project/page";
+import Contact from "./contact/page";
+
 export default function Home() {
   return (
-    <section>
-      <div className="container mx-auto h-full font-chakra overflow-hidden">
-        <div className="flex flex-col md:flex-row justify-between items-center xl:py-8">
+    <div>
+      <section id="home" className="container flex-1 items-center mx-auto h-screen font-chakra overflow-hidden md:py-20 md:content-end">
+        <div className="flex flex-col md:flex-row justify-between">
           {/* text */}
           <div className="flex flex-col justify-center items-center md:place-items-start text-center md:text-left order-2 md:order-none">
             <span className="text-xl">Web Developer</span>
             <h1 className="h1 mb-6">
-              Hello, I'm <br /> <span className="accent">Dika Arnanda Putra</span>
+              Hello, I'm <br /> <span className="txtaccent">Dika Arnanda Putra</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">I am skilled in a wide variety of programming languages, and excel in interactive and responsive web building experience.
             </p>
             {/* Social media */}
             <div className="mb-8 xl:mb-0">
-              <Social containerStyles={"flex gap-6"} iconStyles={"flex justify-center items-center h-9 w-9 border border-[#00ff99] rounded-full accent text-base hover:bg-[#00ff99] hover:text-[#1c1c22] hover:transition-all duration-500"} />
+              <Social containerStyles={"flex gap-6"} iconStyles={"flex justify-center items-center h-9 w-9 border border-[#00ff99] rounded-full txtaccent text-base hover:bg-[#00ff99] hover:text-[#1c1c22] hover:transition-all duration-500"} />
             </div>
           </div>
           {/* photo */}
@@ -25,8 +30,11 @@ export default function Home() {
             <Photo />
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section id="about" className="h-screen bg-red-200"><AboutMe /></section>
+      <section id="project" className="h-screen bg-green-200"><Project /></section>
+      <section id="contact" className="h-screen bg-yellow-200"><Contact /></section>
+    </div>
 
     // <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
     //   <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">

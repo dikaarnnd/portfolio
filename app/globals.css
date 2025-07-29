@@ -117,13 +117,16 @@
   /* * {
     @apply border-border outline-ring/50;
   } */
+   html {
+    scroll-behavior: smooth;
+  }
   body {
     @apply bg-[#1c1c22] text-white leading-loose;
   }
   .container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
-  .accent {
+  .txtaccent {
     @apply text-[#00ff99]
   }
   .accentHover {
