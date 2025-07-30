@@ -1,21 +1,24 @@
 // components
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
+import TargetCursor from "@/components/TargetCursor";
 
 // pages
-import AboutMe from "./aboutme/page";
 import Project from "./project/page";
 import Contact from "./contact/page";
 
 export default function Home() {
   return (
     <div>
+      {/* <div className="hidden  md:block ">
+        <TargetCursor />
+      </div> */}
       <section id="home" className="container">
         <div className="flex flex-col md:flex-row justify-between gap-5">
           {/* text */}
           <div className="flex flex-col justify-center items-center md:place-items-start text-center md:text-left order-2 md:order-none">
             <span className="text-md md:text-xl">Frontend Developer</span>
-            <h1 className="text-[36px] md:text-[65px] xl:text-[78px] leading-[1.1] font-semibold mb-4">
+            <h1 className="text-[36px] md:text-[65px] lg:text[70px] xl:text-[78px] leading-[1.1] font-semibold mb-4">
               Hello, I'm <br /> <span className="txtaccent">Dika Arnanda Putra</span>
             </h1>
             <p className="max-w-[500px] mb-5 md:mb-9 text-white/80">I am skilled in a wide variety of programming languages, and excel in interactive and responsive web building experience.
@@ -31,7 +34,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="about" className="container h-screen bg-red-200"><AboutMe /></section>
       <section id="project" className="container h-screen bg-green-200"><Project /></section>
       <section id="contact" className="container h-screen bg-yellow-200"><Contact /></section>
     </div>

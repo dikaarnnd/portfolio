@@ -2,7 +2,8 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import MyPhoto from '@/assets/images/kocenk.jpg';
+// import MyPhoto from '@/assets/images/pp.jpeg';
+import MyPhoto from '@/assets/images/kocenk.jpg'; // Updated to use PNG format
 
 const Photo = () => {
   return <div className="flex items-center justify-center w-full h-full relative">
@@ -13,7 +14,7 @@ const Photo = () => {
         opacity: 1,
         transition: { delay: 2, duration: 0.4, ease: "easeIn" },
     }}
-    className="relative w-[250px] h-[250px] md:w-[298px] md:h-[298px] lg:w-[352px] lg:h-[352px] xl:w-[400px] xl:h-[400px] overflow-hidden rounded-full"
+    className="relative w-[250px] h-[250px] md:w-[298px] md:h-[298px] lg:w-[352px] lg:h-[352px] xl:w-[400px] xl:h-[400px] overflow-hidden rounded-full grayscale"
     >
         <motion.div 
         initial={{ opacity: 0 }}

@@ -3,11 +3,11 @@
 import React from "react";
 import Link from "next/link";
 import { useState, useEffect, useRef } from 'react';
-import { Menu } from "lucide-react";
+import { Button } from "@/components/ui/button"
+import { FaBars } from 'react-icons/fa';
 
 const links = [
   { path: '#home', name: 'Home' },
-  { path: '#about', name: 'About Me' },
   { path: '#project', name: 'Project' },
   { path: '#contact', name: 'Contact' },
 ];
@@ -51,19 +51,20 @@ const MobileNav = () => {
   }, []);
 
   return (
-    <div className="relative md:hidden" ref={dropdownRef}>
+    <div className="relative" ref={dropdownRef}>
       {/* Toggle Button */}
-      <button
+      <Button 
+        variant="ghost"
         onClick={() => setOpen(!open)}
-        className="text-white focus:outline-none"
+        className="text-white cursor-pointer"
       >
-        <Menu className="w-6 h-6" />
-      </button>
+        <FaBars className="" />
+      </Button>
 
       {/* Dropdown */}
       {open && (
-        <div className="absolute right-0 mt-2 w-48 bg-[#1c1c22] border border-gray-700 rounded-md shadow-lg z-50">
-          <ul className="flex flex-col p-2">
+        <div className="absolute right-0 mt-2 w-30 text-right glass rounded-md shadow-lg z-50">
+          <ul className="flex flex-col px-2">
             {links.map((link, index) => {
               const isActive = link.path === activeSection;
               return (
@@ -71,9 +72,9 @@ const MobileNav = () => {
                   <Link
                     href={link.path}
                     onClick={() => setOpen(false)} // tutup dropdown saat klik
-                    className={`block px-4 py-2 rounded-md transition-all ${
+                    className={`block py-2 rounded-md transition-all ${
                       isActive
-                        ? "text-[#00ff99] border-b-2 border-[#00ff99]"
+                        ? "text-[#00ff99]"
                         : "text-white hover:text-[#00ff99]"
                     }`}
                   >

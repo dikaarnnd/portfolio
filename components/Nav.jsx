@@ -11,7 +11,6 @@ const links = [
     // { path: '/project', name: 'Project' },
     // { path: '/contact', name: 'Contact' },
     { path: '#home', name: 'Home' },
-    { path: '#about', name: 'About Me' },
     { path: '#project', name: 'Project' },
     { path: '#contact', name: 'Contact' },
 ];
@@ -49,6 +48,7 @@ const Nav = () => {
                 // const isActive = link.path === pathname;
                 const isActive = link.path === activeSection;
                 return (
+                    
                     <Link
                         href={link.path}
                         key={index}
@@ -56,7 +56,7 @@ const Nav = () => {
                             isActive ? 'text-[#00ff99]' : ''
                         }`}
                     >
-                        {link.name}
+                       {link.name}
                     </Link>
                 );
             })}

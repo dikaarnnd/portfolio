@@ -114,9 +114,6 @@
 }
 
 @layer base {
-  /* * {
-    @apply border-border outline-ring/50;
-  } */
    html {
     scroll-behavior: smooth;
   }
@@ -124,10 +121,12 @@
     @apply bg-[#1c1c22] text-white leading-loose;
   }
   section {
-    @apply flex-1 h-full sm:h-screen items-center mx-auto font-chakra overflow-hidden
+    @apply flex-1 h-full lg:h-screen items-center mx-auto font-chakra overflow-hidden
     lg:pt-10 lg:pb-20 md:pt-30 md:pb-15 md:content-end
   }
-
+  .glass {
+    @apply bg-neutral-300/20 hover:bg-neutral-300/30 dark:bg-neutral-400/20 dark:hover:bg-neutral-400/30 text-neutral-600 dark:text-neutral-300 backdrop-blur-[1px] border border-neutral-400/20
+  }
   .container {
     @apply max-w-7xl mx-auto px-4 xl:px-8;
   }
