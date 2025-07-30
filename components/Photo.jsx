@@ -2,8 +2,8 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-// import MyPhoto from '@/assets/images/pp.jpeg';
-import MyPhoto from '@/assets/images/kocenk.jpg'; // Updated to use PNG format
+import MyPhoto from '@/assets/images/pp.jpeg';
+// import MyPhoto from '@/assets/images/kocenk.jpg';
 
 const Photo = () => {
   return <div className="flex items-center justify-center w-full h-full relative">

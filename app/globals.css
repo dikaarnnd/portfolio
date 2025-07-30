@@ -120,7 +120,7 @@
   body {
     @apply bg-[#1c1c22] text-white leading-loose;
   }
-  section {
+  .sct {
     @apply flex-1 h-full lg:h-screen items-center mx-auto font-chakra overflow-hidden
     lg:pt-10 lg:pb-20 md:pt-30 md:pb-15 md:content-end
   }

@@ -8,12 +8,13 @@ import Project from "./project/page";
 import Contact from "./contact/page";
 
 export default function Home() {
+  const desc = "Have a passion in the field of frontend developers. Create a user-friendly and responsive web-based and mobile application UI/UX using the React JS and React Native programming languages.";
   return (
     <div>
       {/* <div className="hidden  md:block ">
         <TargetCursor />
       </div> */}
-      <section id="home" className="container">
+      <section id="home" className="container sct">
         <div className="flex flex-col md:flex-row justify-between gap-5">
           {/* text */}
           <div className="flex flex-col justify-center items-center md:place-items-start text-center md:text-left order-2 md:order-none">
@@ -21,7 +22,10 @@ export default function Home() {
             <h1 className="text-[36px] md:text-[65px] lg:text[70px] xl:text-[78px] leading-[1.1] font-semibold mb-4">
               Hello, I'm <br /> <span className="txtaccent">Dika Arnanda Putra</span>
             </h1>
-            <p className="max-w-[500px] mb-5 md:mb-9 text-white/80">I am skilled in a wide variety of programming languages, and excel in interactive and responsive web building experience.
+            <p 
+              className="max-w-[500px] mb-5 md:mb-9 text-white/80"
+            >
+              {desc}
             </p>
             {/* Social media */}
             <div className="mb-8 xl:mb-0">
@@ -34,8 +38,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="project" className="container h-screen bg-green-200"><Project /></section>
-      <section id="contact" className="container h-screen bg-yellow-200"><Contact /></section>
+      {/* <section id="project" className="container sct bg-green-200"><Project /></section> */}
+      {/* <section id="contact" className="container sct bg-yellow-200"><Contact /></section> */}
     </div>
 
     // <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
